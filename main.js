@@ -1,57 +1,57 @@
-function moreThan5() {
-
+function moreThan5(num) {
+  return num > 5;
 }
 
-function topScore() {
-  
+function topScore(score, highScore) {
+  return score > highScore;
 }
 
-function isInDanger() {
-
+function isInDanger(grade) {
+  return grade <= 71 && grade >= 60;
 }
 
-function isCoasting() {
-
+function isCoasting(grade) {
+  return grade <= 83 && grade >= 72;
 }
 
-function isSucceeding() {
-
+function isSucceeding(grade) {
+  return grade <= 92 && grade >= 84;
 }
 
-function isFailing() {
-
+function isFailing(grade) {
+  return grade < 60;
 }
 
-function isAcing() {
-
+function isAcing(grade) {
+  return grade > 92;
 }
 
-function isStudent() {
-
+function isStudent(str) {
+  return str === 'student';
 }
 
-function isTeacher() {
-
+function isTeacher(str) {
+  return str === 'teacher';
 }
 
-function isAdmin() {
-
+function isAdmin(str) {
+  return str === 'admin';
 }
 
-function isElementary() {
-
+function isElementary(str) {
+  return str === 'elementary';
 }
 
-function notAnElementarySchoolAdministrator() {
-
+function notAnElementarySchoolAdministrator(str1, str2) {
+  return str1 !== 'elementary' || str2 !== 'admin';
 }
 
-function isMiddleSchoolTeacher() {
-
+function isMiddleSchoolTeacher(str, num) {
+  return str === 'teacher' && (num <= 8 && num >= 6);
 }
 
-function differentPeople() {
-
+function differentPeople(str1, str2) {
+  return str1 === str2
 }
 
 module.exports = {
